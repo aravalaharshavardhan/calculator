@@ -42,3 +42,15 @@ function operation(operator,a,b){
             return "Invalid operator";
     }
 }
+
+const numberbtn = document.getElementsByClassName("numbers");
+const displays = document.querySelector(".display");
+let currentdisplay = "";
+
+for(let i = 0;i<numberbtn.length;i++){
+    numberbtn[i].addEventListener("click",function(){
+        currentdisplay+= numberbtn[i].textContent;
+        displays.textContent = currentdisplay;
+        
+    })
+}

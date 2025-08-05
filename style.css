@@ -1,0 +1,14 @@
+.display{
+    text-align: center;
+}
+
+
+
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 60px); /* 4 buttons per row */
+  grid-gap: 10px;
+  margin: 40px auto;
+  max-width: 260px;
+  justify-content: center;}
